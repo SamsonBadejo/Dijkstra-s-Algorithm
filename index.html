@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Applying Dijkstra's Algorithm</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Applying Dijkstra's Algorithm</h1>
+        
+      </div>
+
+      <div class="card">
+        <div id="app">
+          <div>
+            <label for="start">Start Node</label>
+            <input type="text" id="start" />
+          </div>
+          <div>
+            <label for="end">End Node</label>
+            <input type="text" id="end" />
+          </div>
+          <div class="text-space">
+            <label for="graph">Graph (JSON format)</label>
+            <textarea id="graph" rows="10" cols="30"></textarea>
+          </div>
+          <button onclick="applyDijkstra()">Apply Dijkstra</button>
+          <div id="result"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Usage -->
+    <!-- Enter the start node in the "Start Node" input.
+    Enter the graph in JSON format in the "Graph" textarea.
+    Click "Apply Dijkstra" to calculate the shortest paths and display them. -->
+
+    <!-- {
+        "A": { "B": 4, "C": 2 },
+        "B": { "A": 4, "C": 5, "D": 10 },
+        "C": { "A": 2, "B": 5, "D": 3 },
+        "D": { "B": 10, "C": 3 }
+    }
+     -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
